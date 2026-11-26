@@ -1,0 +1,6 @@
+.my-text{
+    color: red;
+    background-color: rgb(178, 178, 161);
+    font-size:  70;
+    text-shadow: 5px, 10px,15px yellow; 
+}
