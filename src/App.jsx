@@ -1,69 +1,41 @@
 import './App.css'
-import { Link, Routes, Route } from 'react-router-dom'
+
+import { Routes, Route } from 'react-router-dom'
+
 import Footer from './components/Footer'
-import About from './pages/About'
+import Header from './components/header'
+
 import Home from './pages/Home'
+import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
-import Slide from './pages/Home'
+import Products from './pages/Products'
 
 function App() {
-  return (
-    <>
-      {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container">
 
-          <Link className="navbar-brand" to="/">
-            My Website
-          </Link>
+    return (
+        <>
 
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+            <Header />
 
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
+            <Routes>
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
-              </li>
+                <Route path="/" element={<Home />} />
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">About</Link>
-              </li>
+                <Route path="/about" element={<About />} />
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/services">Services</Link>
-              </li>
+                <Route path="/products" element={<Products />} />
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact</Link>
-              </li>
+                <Route path="/services" element={<Services />} />
 
-            </ul>
-          </div>
-        </div>
-      </nav>
+                <Route path="/contact" element={<Contact />} />
 
-      {/* Routing */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/contact" element={<Slide />} />
+            </Routes>
 
-      </Routes>
+            <Footer />
 
-      <Footer />
-    </>
-  )
+        </>
+    )
 }
 
 export default App

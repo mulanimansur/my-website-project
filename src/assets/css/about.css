@@ -1,0 +1,100 @@
+
+.about-hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.about-hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.about-hero h1,
+.about-hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.about-hero p {
+  font-size: 20px;
+}
+
+.about-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-section .about-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.story-section,
+.choose-section {
+  padding: 60px 0;
+  background: #fff5f5;
+}
+
+.mission-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.mission-card,
+.choose-card {
+  padding: 30px;
+  height: 100%;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mission-card h2,
+.choose-card h4 {
+  color: #b83250;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    height: 280px;
+  }
+
+  .about-hero h1 {
+    font-size: 30px;
+  }
+
+  .about-hero p {
+    font-size: 16px;
+  }
+
+  .about-section {
+    text-align: center;
+  }
+}

@@ -1,0 +1,366 @@
+/* CONTACT BANNER */
+
+.contact-banner {
+
+    width: 100%;
+    min-height: 350px;
+
+    background:
+    linear-gradient(rgba(50,20,10,0.55),
+    rgba(50,20,10,0.55)),
+    url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.contact-banner-content p {
+
+    color: #f5c16c;
+    letter-spacing: 5px;
+    font-weight: bold;
+
+}
+
+.contact-banner-content h1 {
+
+    font-size: 50px;
+    font-weight: bold;
+    margin: 15px 0;
+
+}
+
+.contact-banner-content h5 {
+
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+
+    padding: 80px 0;
+    background: #fffaf3;
+
+}
+
+.contact-heading {
+
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.contact-heading p {
+
+    color: #b8860b;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+}
+
+.contact-heading h2 {
+
+    color: #542b20;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 15px 0;
+
+}
+
+.contact-heading span {
+
+    color: #777;
+
+}
+
+
+/* CONTACT INFORMATION */
+
+.contact-info {
+
+    background: #542b20;
+    color: white;
+
+    padding: 35px;
+    border-radius: 15px;
+
+    height: 100%;
+
+}
+
+.contact-info h3 {
+
+    font-size: 27px;
+    margin-bottom: 15px;
+
+}
+
+.contact-info > p {
+
+    color: #ddd;
+    margin-bottom: 35px;
+
+}
+
+.contact-item {
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+    margin-bottom: 30px;
+
+}
+
+.contact-icon {
+
+    min-width: 50px;
+    height: 50px;
+
+    background: #f5c16c;
+    color: #542b20;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+
+.contact-item h5 {
+
+    color: #f5c16c;
+    margin-bottom: 5px;
+
+}
+
+.contact-item p {
+
+    color: #eee;
+    margin: 0;
+
+    font-size: 14px;
+
+}
+
+
+/* CONTACT FORM */
+
+.contact-form {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+
+}
+
+.contact-form h3 {
+
+    color: #542b20;
+    font-size: 27px;
+    font-weight: bold;
+
+}
+
+.contact-form > p {
+
+    color: #777;
+    margin-bottom: 25px;
+
+}
+
+.contact-form label {
+
+    display: block;
+
+    color: #542b20;
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+.contact-form input,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 12px 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+
+    border-color: #b8860b;
+
+    box-shadow: 0 0 5px rgba(184,134,11,0.2);
+
+}
+
+.contact-form textarea {
+
+    resize: none;
+
+}
+
+
+/* CONTACT BUTTON */
+
+.contact-btn {
+
+    background: #8b4513;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 30px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+
+}
+
+.contact-btn:hover {
+
+    background: #d4a056;
+    color: #3e2723;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* MAP SECTION */
+
+.map-section {
+
+    padding: 70px 0;
+
+    background: white;
+
+}
+
+.map-section iframe {
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .contact-banner {
+
+        min-height: 280px;
+
+    }
+
+    .contact-banner-content h1 {
+
+        font-size: 35px;
+
+    }
+
+    .contact-heading h2 {
+
+        font-size: 27px;
+
+    }
+
+    .contact-info {
+
+        padding: 25px;
+
+    }
+
+    .contact-form {
+
+        padding: 25px;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .contact-banner {
+
+        min-height: 230px;
+
+    }
+
+    .contact-banner-content h1 {
+
+        font-size: 28px;
+
+    }
+
+    .contact-banner-content h5 {
+
+        font-size: 14px;
+
+    }
+
+    .contact-heading h2 {
+
+        font-size: 23px;
+
+    }
+
+    .contact-section {
+
+        padding: 45px 0;
+
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+
+        font-size: 22px;
+
+    }
+
+    .map-section {
+
+        padding: 40px 0;
+
+    }
+
+}

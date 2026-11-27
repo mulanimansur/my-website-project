@@ -1,6 +1,334 @@
-.my-text{
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.my-text {
     color: red;
     background-color: rgb(178, 178, 161);
-    font-size:  70;
-    text-shadow: 5px, 10px,15px yellow; 
+    font-size: 70px;
+    text-shadow: 5px 10px 15px yellow;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#cakeSlider {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner,
+.carousel-item {
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+}
+
+.hero-content p {
+    color: #f5c16c;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.hero-content h5 {
+    margin-bottom: 25px;
+}
+
+.cake-btn {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cake-btn:hover {
+    background-color: #d4a056;
+    color: #3e2723;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   CATEGORY SECTION
+========================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading p,
+.about-small {
+    color: #b8860b;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    color: #3e2723;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.category-card {
+    background: white;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.category-card h3 {
+    color: #5d3022;
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.category-card p {
+    color: #777;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.home-about {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.about-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.home-about h2 {
+    color: #3e2723;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.home-about p {
+    line-height: 1.8;
+    color: #666;
+}
+
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    #cakeSlider {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hero-content {
+        left: 5%;
+        right: 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    .hero-content p {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content h5 {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .cake-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .home-about h2 {
+        font-size: 28px;
+        margin-top: 25px;
+    }
+
+    .about-img {
+        height: 280px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 480px) {
+
+    #cakeSlider {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hero-content {
+        left: 5%;
+        right: 5%;
+        top: 50%;
+    }
+
+    .hero-content p {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content h1 {
+        font-size: 19px;
+        margin: 7px 0;
+    }
+
+    .hero-content h5 {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .cake-btn {
+        padding: 7px 15px;
+        font-size: 11px;
+    }
+
+    .category-section {
+        padding: 40px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 25px;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+
+    .category-card {
+        margin-bottom: 15px;
+    }
+
+    .category-card img {
+        height: 220px;
+    }
+
+    .category-card h3 {
+        font-size: 20px;
+    }
+
+    .home-about {
+        padding: 40px 0;
+    }
+
+    .about-img {
+        height: 230px;
+    }
+
+    .home-about h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 360px) {
+
+    .hero-content h1 {
+        font-size: 16px;
+    }
+
+    .hero-content h5 {
+        font-size: 10px;
+    }
+
+    .cake-btn {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+
 }
