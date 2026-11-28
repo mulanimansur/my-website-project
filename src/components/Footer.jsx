@@ -93,9 +93,9 @@ const Footer = () => {
 
                 <hr style={{ borderColor: '#d4af37', marginTop: '35px' }} />
 
-                <div className="text-center">
+                <div className="text-center ">
                     <p className="mb-0">
-                        © 2026 The Cake Studio. All Rights Reserved.
+                       <bold> © 2026 The Cake Studio. All Rights Reserved.</bold>
                         <br />
                         Made with ❤️ for Cake Lovers.
                     </p>
